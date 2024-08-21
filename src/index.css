@@ -16,6 +16,7 @@
     --white-lightness: 100%;
     --color-primary: hsl(var(--primary-hue), 89%, 41%);
     --color-white: hsl(0, 5%, var(--white-lightness));
+    --color-light: hsl(var(--primary-hue), 5%, var(var(--light-lightness)));
     --color-black: hsl(var(--primary-hue), 5%, var(--black-lightness));
     --color-dark: hsl(var(--primary-hue), 5%, var(--dark-lightness));
 
@@ -28,4 +29,32 @@
 
     --transition: all 500ms ease;
 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+/* General container class */
+.container {
+    width: var(--container-width-lg);
+    margin-inline: auto;
+    max-width: 1920px;
+}
+
+/* General container class */
+section {
+    padding: 10rem 0;
+    background: var(--color-light);
+    transition: var(--transition);
+}
+
+section:nth-child(even) {
+    background: var(--color-white);
 }
