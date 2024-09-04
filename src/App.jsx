@@ -1,29 +1,28 @@
-import Navbar from './sections/navbar/Navbar';
-import Header from './sections/header/Header';
-import Portfolio from './sections/portfolio/Portfolio';
-import Services from './sections/services/Services';
-import About from './sections/about/About';
-import Testimonials from './sections/testimonials/Testimonials';
-import FAQs from './sections/faqs/FAQs';
-import Contact from './sections/contact/Contact';
-import Footer from './sections/footer/Footer';
-import FloatingNav from './sections/floating-nav/FloatingNav';
+import React from 'react'
+import Header from './components/header/Header'
+import Nav from './components/nav/Nav'
+import About from './components/about/About'
+import Experience from './components/experience/Experience'
+import Services from './components/services/Services'
+import Portfolio from './components/portfolio/Portfolio'
+import Testimonials from './components/testimonials/Testimonials'
+import Contact from './components/contact/Contact'
+import Footer from './components/footer/Footer'
 
 const App = () => {
-    return (
-      <main>
-        <Navbar/>
-        <Header/>
-        <About/>
-        <Services/>
-        <Portfolio/>
-        <Testimonials/>
-        <FAQs/>
-        <Contact/>
-        <Footer/>
-        <FloatingNav/>
-      </main>
-    )
-  }
-  
-  export default App
+  return (
+    <>
+      <Header />
+      <Nav />
+      <About />
+      <Experience />
+      <Services />
+      <Portfolio />
+      <Testimonials />
+      <Contact />
+      <Footer />
+    </>
+  )
+}
+
+export default App
