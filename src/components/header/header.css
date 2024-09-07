@@ -67,7 +67,7 @@ header {
     }
 }
 
-/* ==================== Media query (medium devices) ============ */
+/* ==================== Media query (small devices) ============ */
 @media screen and (max-width: 600px) {
     header {
         height: 100vh;

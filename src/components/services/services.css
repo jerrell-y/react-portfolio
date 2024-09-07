@@ -62,7 +62,7 @@
     }
 }
 
-/* ==================== Media query (medium devices) ============ */
+/* ==================== Media query (small devices) ============ */
 @media screen and (max-width: 600px) {
     .services__container {
         grid-template-columns: 1fr;
